@@ -31,7 +31,14 @@ def process_chat(input_filename, output_filename):
         output_file.write(chat_without_duplicates)
 
 def menu():
-    print("Bienvenido al WhatsApp Chat Cleaner.")
+    print(" _____ _           _  ______ _              ")
+    print("/  __ \ |         | | |  ___(_)              ")
+    print("| /  \/ |__   __ _| |_| |_   ___  _____ _ __ ")
+    print("| |   | '_ \ / _` | __|  _| | \ \/ / _ \ '__|")
+    print("| \__/\ | | | (_| | |_| |   | |>  <  __/ |   ")
+    print("\____/_| |_|\__,_|\__\_|   |_/_/\_\___|_|   ")
+    print("")
+
     print("1. Procesar archivo de chat")
     print("2. Salir")
 
