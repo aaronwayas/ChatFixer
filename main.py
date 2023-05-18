@@ -20,6 +20,30 @@ def remove_duplicate_messages(chat):
 
     return '\n'.join(chat_without_duplicates)
 
+def chat_statistics(chat):
+    lines = chat.split('\n')
+
+    total_messages = len(lines)
+    unique_participants = set()
+    message_count = {}
+
+    for line in lines:
+        if line.strip() != '':
+            if ':' in line:
+                participant, message = line.split(':', 1)
+                participant = participant.strip()
+                unique_participants.add(participant)
+                message_count[participant] = message_count.get(participant, 0) + 1
+
+    most_active_participant = max(message_count, key=message_count.get)
+
+    print("Estadísticas del chat:")
+    print("Total de mensajes: {}".format(total_messages))
+    print("Total de participantes únicos: {}".format(len(unique_participants)))
+    print("El participante más activo: {}".format(most_active_participant))
+    print("Número de mensajes enviados por el participante más activo: {}".format(message_count[most_active_participant]))
+
+
 def process_chat(input_filename, output_filename):
     with open(input_filename, 'r', encoding='utf-8') as input_file:
         chat_content = input_file.read()
@@ -40,10 +64,11 @@ def menu():
     print("")
 
     print("1. Procesar archivo de chat")
-    print("2. Salir")
+    print("2. Mostrar estadísticas del chat")
+    print("3. Salir")
 
     while True:
-        option = input("Selecciona una opción (1-2): ")
+        option = input("Selecciona una opción (1-3): ")
 
         if option == '1':
             input_filename = input("Ingresa el nombre del archivo de entrada: ")
@@ -51,6 +76,11 @@ def menu():
             process_chat(input_filename, output_filename)
             print("El archivo ha sido procesado exitosamente.")
         elif option == '2':
+            input_filename = input("Ingresa el nombre del archivo de chat: ")
+            with open(input_filename, 'r', encoding='utf-8') as input_file:
+                chat_content = input_file.read()
+            chat_statistics(chat_content)
+        elif option == '3':
             print("¡Hasta luego!")
             break
         else:
