@@ -1,0 +1,2 @@
+# ChatFixer
+Manipulador de Chat
