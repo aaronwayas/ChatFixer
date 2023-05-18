@@ -21,7 +21,7 @@ def remove_duplicate_messages(chat):
     return '\n'.join(chat_without_duplicates)
 
 def process_chat(input_filename, output_filename):
-    with open(input_filename, 'r') as input_file:
+    with open(input_filename, 'r', encoding='utf-8') as input_file:
         chat_content = input_file.read()
 
     chat_without_datetime_multimedia = remove_datetime_multimedia(chat_content)
@@ -31,12 +31,12 @@ def process_chat(input_filename, output_filename):
         output_file.write(chat_without_duplicates)
 
 def menu():
-    print(" _____ _           _  ______ _              ")
-    print("/  __ \ |         | | |  ___(_)              ")
-    print("| /  \/ |__   __ _| |_| |_   ___  _____ _ __ ")
-    print("| |   | '_ \ / _` | __|  _| | \ \/ / _ \ '__|")
-    print("| \__/\ | | | (_| | |_| |   | |>  <  __/ |   ")
-    print("\____/_| |_|\__,_|\__\_|   |_/_/\_\___|_|   ")
+    print("      _____ _           _  ______ _              ")
+    print("     /  __ \ |         | | |  ___(_)              ")
+    print("     | /  \/ |__   __ _| |_| |_   ___  _____ _ __ ")
+    print("     | |   | '_ \ / _` | __|  _| | \ \/ / _ \ '__|")
+    print("     | \__/\ | | | (_| | |_| |   | |>  <  __/ |   ")
+    print("     \____/_| |_|\__,_|\__\_|   |_/_/\_\___|_|   ")
     print("")
 
     print("1. Procesar archivo de chat")
