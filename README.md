@@ -1,52 +1,37 @@
 # ChatFixer
 
-ChatFixer es una herramienta de procesamiento de archivos de chat que te permite limpiar, analizar y obtener estadísticas de tus conversaciones. Puedes utilizar este programa para eliminar información no deseada, eliminar mensajes duplicados y obtener información útil sobre el chat.
+ChatFixer es una herramienta sencilla para corregir y organizar archivos de chat de WhatsApp.
 
 ## Características
 
-- Eliminación de información de fecha y multimedia.
-- Eliminación de mensajes duplicados.
-- Estadísticas del chat, incluyendo total de mensajes, participantes únicos y participante más activo.
+- Elimina fechas, horas y líneas de multimedia de los mensajes.
+- Remueve mensajes duplicados para mantener un chat limpio y conciso.
 
-## Requisitos
-
-- Python 3.7 o superior
-
-## Instalación
-
-1. Clona el repositorio o descarga los archivos en tu computadora.
-2. Asegúrate de tener Python 3.7 o superior instalado.
-3. Instala las dependencias ejecutando el siguiente comando:
-
-   ```shell
-   pip install -r requirements.txt
-   ```
 ## Uso
 
-Para exportar un chat de WhatsApp y convertirlo en un archivo de texto, sigue estos pasos:
+1. Clona o descarga el repositorio de ChatFixer.
 
-1. Abre la aplicación de WhatsApp y selecciona el chat que quieres exportar.
-2. Toca el icono de los tres puntos en la esquina superior derecha y elige **Más** y luego **Exportar chat**.
-3. Elige el método de exportación que prefieras, por ejemplo, enviarlo por correo electrónico o guardar un archivo .zip en tu dispositivo. (Si necesitas más ayuda, visita nuestro [repositorio en GitHub](https://github.com/conversor-de-chats)).
-4. Una vez que tengas el archivo exportado en tu computadora, abre el programa y selecciona el archivo. (Asegurece que lo tenga instalado)
-5. El programa creará un nuevo archivo de texto en la misma carpeta que el archivo original.
-6. Revisa el archivo de texto y asegúrate de que esté correcto y sin errores.
+2. Asegúrate de tener instalado Python en tu sistema.
 
-## Ejemplos de Archivos de Chat
-El archivo de chat debe estar en formato de texto plano y seguir una estructura similar a la siguiente:
+3. Ejecuta el programa utilizando el siguiente comando:
+   
+```bash
+python chatfixer.py
+```
+4. Sigue las instrucciones del menú para seleccionar el archivo de entrada y el archivo de salida.
 
-```
-01/01/22 10:00 a.m - Usuario1: ¡Hola a todos!
-01/01/22 10:05 a.m - Usuario2: ¡Hola Usuario1! ¿Cómo estás?
-01/01/22 10:10 a.m - Usuario1: ¡Bien, gracias! ¿Y tú?
-```
-Despues el programa le dara el siguiente texto:
+5. El programa procesará el archivo de chat y generará un nuevo archivo sin las fechas, horas, multimedia y mensajes duplicados.
 
-```
-Usuario1: ¡Hola a todos!
-Usuario2: ¡Hola Usuario1! ¿Cómo estás?
-Usuario1: ¡Bien, gracias! ¿Y tú?
-```
+6. ¡Disfruta de tu chat limpio y organizado!
+
+## Requisitos del sistema
++ Python 3.x
 
 ## Contribuciones
-Las contribuciones son bienvenidas. Si encuentras algún problema, tienes una idea para mejorar el programa o deseas añadir nuevas características, no dudes en abrir un issue o enviar un pull request.
+¡Se aceptan contribuciones! Si deseas mejorar ChatFixer o agregar nuevas características, no dudes en enviar una solicitud de extracción.
+
+## Problemas y preguntas
+Si encuentras algún problema o tienes alguna pregunta, por favor, abre un issue en el repositorio de ChatFixer.
+
+## Licencia
+Este proyecto está bajo la Licencia MIT.

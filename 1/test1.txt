@@ -1,0 +1,10 @@
+03/15/21 8:30 pm.Juan: Hola, ¿cómo estás?
+03/15/21 8:31 pm.María: ¡Hola! Estoy bien, ¿y tú?
+03/15/21 8:32 pm.Juan: Bien, gracias. ¿Qué has hecho hoy?
+03/15/21 8:33 pm.María: He ido al gimnasio y luego salí a almorzar con unos amigos. ¿Y tú?
+03/15/21 8:34 pm.Juan: Yo he estado trabajando todo el día. Ahora estoy descansando en casa.
+03/15/21 8:35 pm.María: Entiendo. Descansar en casa suena bien. ¿Quieres salir a tomar algo más tarde?
+03/15/21 8:36 p m.Juan: ¡Claro! Me encantaría. ¿A qué hora nos encontramos?
+03/15/21 8:37 pm.María: Digamos a las 9:00 p. m. en el café de siempre.
+03/15/21 8:38 pm.Juan: Perfecto, nos vemos entonces. Hasta luego.
+03/15/21 8:38 pm.María: Hasta luego.
